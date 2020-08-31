@@ -1,8 +1,2 @@
-html {
-  box-sizing: border-box;
-}
-*, 
-*::after,
-*::before {
-  box-sizing: inherit;
-}
+@import '_vars';
+@import '_global';
