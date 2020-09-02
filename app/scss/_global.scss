@@ -39,16 +39,15 @@ body {
     padding: 0 15px;
   }
 }
-.title{
+.title {
   text-align: center;
+  @include f700;
   color: $bg;
-  font-weight: 700;
   line-height: 60px;
   font-size: 36px;
   margin-bottom: 30px;
-
 }
-.rate-star{
+.rate-star {
   display: inline-block;
   margin-right: 13px;
 }
