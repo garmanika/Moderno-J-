@@ -272,10 +272,9 @@
       .advantages__item-images {
         background-color: $green;
         svg {
-          g{
+          g {
             fill: #fff;
           }
-          
         }
       }
       .advantages__item-title {
@@ -323,3 +322,39 @@
 }
 
 // end advantages
+// start author
+.author{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 720px;
+  &__box{
+    max-width: 650px;
+    width: 100%;
+    min-height: 215px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $green;
+  }
+  &__title{
+    font-size: 30px;
+    line-height: 30px;
+    color: #fff;
+    margin-right: 45px;
+    max-width: 265px;
+    span{
+      @include f700;
+    }
+  }
+  &__link{
+    font-size: 18px;
+    line-height: 36px;
+    padding: 14px 40px;
+    background-color: #fff;
+  }
+}
+// end author
