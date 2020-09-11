@@ -12,3 +12,7 @@ $gray: #f4f6f5;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
 }
+@mixin icomoon {
+  position: absolute;
+  font-family: 'icomoon';
+}

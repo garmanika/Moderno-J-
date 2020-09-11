@@ -1,10 +1,15 @@
 html {
   box-sizing: border-box;
 }
+
 *,
 *::after,
 *::before {
   box-sizing: inherit;
+}
+html,
+body {
+  height: 100%;
 }
 a {
   display: inline-block;
@@ -50,4 +55,71 @@ body {
 .rate-star {
   display: inline-block;
   margin-right: 13px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.content {
+  flex: 1 0 auto;
+}
+.page-content {
+  background: $gray;
+}
+.footer {
+  flex: 0 0 auto;
+}
+.breadcrumbs {
+  &__inner {
+    padding: 45px 0 40px;
+  }
+  &__list {
+    li {
+      display: inline-block;
+      position: relative;
+      &:last-child {
+        a,
+        span {
+          color: $bg;
+        }
+      }
+      & + li {
+        padding-left: 24px;
+        &::before {
+          content: "-";
+          position: absolute;
+          left: 8px;
+          color: $green;
+        }
+      }
+    }
+    a {
+      color: #b0bec5;
+    }
+  }
+}
+.irs-max,
+.irs-min {
+  display: none;
+}
+.irs--flat .irs-bar {
+  background-color: #f2f5f8;
+  height: 5px;
+}
+.irs--flat .irs-bar{
+  background-color: $bg;
+}
+.irs--flat .irs-handle{
+  width: 16h 16px;
+  border: 4px solid $green;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+.irs--flat .irs-handle>i:first-child {
+  display: none;
+}
+.irs-from, .irs-single, .irs-to{
+  top: 45px;
 }
