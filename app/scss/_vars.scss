@@ -3,6 +3,8 @@ $red: #e74c3c;
 $green: #8bc34a;
 $bg: #263238;
 $gray: #f4f6f5;
+$yellow: #fcb322;
+$orange: #ef6c00;
 
 @mixin f500 {
   font-family: "Roboto", sans-serif;
@@ -14,5 +16,5 @@ $gray: #f4f6f5;
 }
 @mixin icomoon {
   position: absolute;
-  font-family: 'icomoon';
+  font-family: "icomoon";
 }
