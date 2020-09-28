@@ -2,10 +2,14 @@ $text: #546e7a;
 $red: #e74c3c;
 $green: #8bc34a;
 $bg: #263238;
-$gray: #f4f6f5;
+$grey: #f4f6f5;
 $yellow: #fcb322;
 $orange: #ef6c00;
 
+@mixin f300 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
 @mixin f500 {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -13,6 +17,7 @@ $orange: #ef6c00;
 @mixin f700 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
+  color: #263238;
 }
 @mixin icomoon {
   position: absolute;
