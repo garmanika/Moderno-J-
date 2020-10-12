@@ -26,13 +26,15 @@ $(function(){
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
+          dots: false,
         }
       },
       {
-        breakpoint: 801,
+        breakpoint: 960,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          dots: false,
         }
       },
     ]
@@ -75,7 +77,7 @@ $(function(){
   });
 
 
-	// $('input[type="file"], select').styler();
+  $('input[type="file"], select').styler();
 
   var mixer = mixitup('.products__inner-box');
 
