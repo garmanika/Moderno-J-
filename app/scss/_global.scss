@@ -1,0 +1,155 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+html,
+body {
+  height: 100%;
+  position: relative;
+  overflow-x: hidden;
+  
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: $text;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body {
+  overflow-x: hidden;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $text;
+}
+html, body {
+  position:relative;
+  overflow-x:hidden;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.container-fluid {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+@media (max-width: 720px) {
+  .container-fluid {
+    padding: 0 15px;
+  }
+}
+.title {
+  text-align: center;
+  @include f700;
+  color: $bg;
+  line-height: 60px;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+.rate-star {
+  display: inline-block;
+  margin-right: 13px;
+}
+
+.wrapper {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+}
+.content {
+  flex: 1 0 auto;
+}
+.page-content {
+  background: $grey;
+}
+.footer {
+  flex: 0 0 auto;
+}
+.breadcrumbs {
+  &__inner {
+    padding: 45px 0 40px;
+    overflow: hidden;
+    width: 1200px;
+  }
+  &__list {
+    li {
+      display: inline-block;
+      position: relative;
+      &:last-child {
+        a,
+        span {
+          color: $bg;
+        }
+      }
+      & + li {
+        padding-left: 24px;
+        &::before {
+          content: "-";
+          position: absolute;
+          left: 8px;
+          color: $green;
+        }
+      }
+    }
+    a {
+      color: #b0bec5;
+    }
+  }
+}
+.irs-max,
+.irs-min {
+  display: none;
+}
+.irs--flat .irs-bar {
+  background-color: #f2f5f8;
+  height: 5px;
+}
+.irs--flat .irs-bar {
+  background-color: $bg;
+}
+.irs--flat .irs-handle {
+  width: 16h 16px;
+  border: 4px solid $green;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+.irs--flat .irs-handle > i:first-child {
+  display: none;
+}
+.irs-from,
+.irs-single,
+.irs-to {
+  top: 45px;
+}
+.angle-right {
+  position: relative;
+  padding-left: 15px;
+  &::before {
+    content: "\f105";
+    @include icomoon;
+    left: 0;
+    color: $green;
+    font-size: 14px;
+  }
+}
+#modal{
+  display: none;
+}
